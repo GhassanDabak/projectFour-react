@@ -8,7 +8,6 @@ i {
   margin-left: 0 !important;
 }
 
-
 .CustomCartZ a {
   display: inline !important;
 }
@@ -50,5 +49,4 @@ nav ul li a:hover {
 .logNav:hover {
   background-color: rgb(65, 65, 65) !important;
   transition: all .3s ease-in-out !important;
-
 }
