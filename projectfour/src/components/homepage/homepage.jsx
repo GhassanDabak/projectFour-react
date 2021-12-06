@@ -10,9 +10,13 @@ export default function Homepage() {
     return (
         <div className="container1"  >
             <Heroimg />
-            <div>{localStorage.getItem('products') ? storageProducts.filter((element, index) => index < 3).map(data => <CardContainer value={data} />) : <h1>There are no products at the moment</h1>}</div>
+            <h1 className="text-center my-5" >Featured Products</h1>
+            <div className="card-container">{localStorage.getItem('products') ? storageProducts.filter((element, index) => index < 3).map(data => <CardContainer value={data} />) : <h1>There are no products at the moment</h1>}</div>
             <YouTube />
+            <h1 className="text-center my-5" >Testimonial</h1>
             <Testimonial />
+            <h1 className="text-center my-5" >Developers</h1>
+
             <Developers />
 
         </div>
