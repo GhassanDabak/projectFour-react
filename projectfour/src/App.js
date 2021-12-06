@@ -88,7 +88,8 @@ class App extends React.Component {
 
     }
 
-    renderTableData = () => {
+    renderTableData = (e) => {
+        e.preventDefault();
         if (!this.state.show) {
             let index;
             let arrQuantity = this.state.quantity;
@@ -108,7 +109,6 @@ class App extends React.Component {
                         arrTitle.push(element.title)
                         arrQuantity.push(element.quantity)
                     })
-
                 })
                 this.setState({ price: arrPrice })
                 this.setState({ title: arrTitle })
